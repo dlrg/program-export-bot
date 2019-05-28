@@ -1,0 +1,9 @@
+version: "3"
+services:
+  bot:
+    build: ./
+    command: npm start
+    volumes:
+      - ./src:/app/src
+    environment:
+      - NODE_ENV=docker
